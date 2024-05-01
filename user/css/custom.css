@@ -1,0 +1,11 @@
+.vote-form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: aqua;
+}
+
+.card {
+    max-width: 600px; 
+    margin: 0 auto;
+}

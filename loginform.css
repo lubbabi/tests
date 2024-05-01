@@ -1,0 +1,230 @@
+.login-box {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 9999;
+}
+
+.login-box.show {
+    display: block;
+}
+
+.login-content {
+    font-family: "Poppins", sans-serif;
+    width: 330px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px 30px 50px 30px;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    font-weight: 400;
+    top: 10px;
+    right: 11px;
+    cursor: pointer;
+    padding: 6px 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-popup:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+::selection {
+    color: #fff;
+    background: #5372F0;
+}
+
+.box {
+    width: 350px;
+    padding: 40px 30px 50px 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.box form {
+    margin: 30px 0;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.field.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        margin-left: 0px;
+    }
+
+    20%,
+    80% {
+        margin-left: -6px;
+    }
+
+    40%,
+    60% {
+        margin-left: 6px;
+    }
+}
+
+.field .input-area {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #5372F0;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+}
+
+.field input:focus,
+.field.valid input {
+    border-color: #5372F0;
+}
+
+.field.shake input,
+.field.error input {
+    border-color: #dc3545;
+}
+
+.field .input-area i {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.input-area .icon {
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+}
+
+.input-area .error-icon {
+    right: 15px;
+    color: #dc3545;
+}
+
+.input:focus .icon,
+.field.valid .icon {
+    color: #5372F0;
+}
+
+.field.shake input:focus~.icon,
+.field.error input:focus~.icon {
+    color: #bfbfbf;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+.field .error-txt {
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+}
+
+form .field .error {
+    display: none;
+}
+
+.field.shake .error,
+.field.error .error {
+    display: block;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -10px;
+}
+
+.forgot-password a {
+    color: #5372F0;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+form input[type="submit"] {
+    height: 45px;
+    margin-top: 30px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #5372F0;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #2c52ed;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 70%;
+        padding: 30px 20px 40px 20px;
+        margin-top: 90px;
+    }
+}
+
+.loginformBtn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 10px 20px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    margin-top: 10px;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    transition: background 0.3s ease; /* Added transition */
+}
+
+.loginformBtn:hover {
+    background: #006e52; /* Background color on hover */
+}

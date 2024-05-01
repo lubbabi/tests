@@ -1,0 +1,20 @@
+I-Import nyo muna yung 'hoa_database' sa MySQL
+
+(Need nyo muna nang XAMPP)
+
+-----------------------------------------------------
+JUST DRAG THE 'hoa_database' file to Import Tab in MySQL
+
+yung file na 'to (tests) i-lagay nyo muna sa loob ng folder na 'htdocs'
+
+in XAMPP may 'Explorer' Button dun, Click nyo lang then makikita nyo na yung 'htdocs'dun then open, drag/copy nyo yung 'tests' folder sa loob ng 'htdocs'
+
+-----------------------------------------------------
+
+then after that,
+
+Go to localhost/sites/homepage.php
+
+Use this credential:
+Homeowner ID: 12
+Password: a

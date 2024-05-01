@@ -1,0 +1,429 @@
+/* Reset and Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px; /* Set base font size */
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+}
+
+button {
+  background-color: transparent;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 2em;
+  font-family: Overpass;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.header-content {
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  padding: 24px 48px;
+  justify-content: space-between;
+  background-color: #27284E;
+}
+
+/* Banner Styles */
+.banner {
+  max-width: 100%;
+  text-align: center;
+}
+
+.bannerContainer {
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 96px 40px; /* Adjusted padding */
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #27284E;
+}
+
+.bannerDescription,
+.bannerTitle {
+  font-family: Rubik;
+  line-height: 150%;
+}
+
+.bannerDescription {
+  font-size: 14px; /* Adjusted font size */
+  font-weight: 400;
+}
+
+.bannerTitle {
+  font-size: 28px; /* Adjusted font size */
+  font-weight: 600;
+}
+
+/* Main Title Styles */
+.main-title-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 64px; /* Adjusted margin */
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-title-content {
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  min-height: auto;
+  align-items: center;
+  padding: 64px 24px; /* Adjusted padding */
+  flex-direction: column;
+  justify-content: center;
+  background-color: #27284E;
+}
+
+.main-title-text {
+  font-size: 36px; /* Adjusted font size */
+  font-family: Rubik;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.main-title-subtext {
+  font-size: 16px; /* Adjusted font size */
+  text-align: center;
+}
+
+/* Features Section Styles */
+.featuresContainer {
+  flex: 0 0 auto;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #27284E;
+}
+
+.featuresContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px; /* Adjusted gap */
+  max-width: 100%; /* Adjusted max-width */
+  padding: 48px 24px; /* Adjusted padding */
+  text-align: center;
+}
+
+.FeatureMainTitle {
+  margin-bottom: 16px; /* Adjusted margin */
+  text-align: center;
+  font-size: 28px; /* Adjusted font size */
+  font-family: Rubik;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.FeatureSubtitle,
+.FeatureSmallTitle,
+.card-text {
+  font-family: Overpass;
+  line-height: 150%;
+}
+
+.FeatureSmallTitle {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.FeatureSubtitle {
+  font-size: 16px; /* Adjusted font size */
+  font-weight: 400;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.features-grid {
+  width: 100%;
+  display: grid;
+  grid-gap: 16px; /* Adjusted grid gap */
+  grid-template-columns: 1fr; /* Single column layout on smaller screens */
+}
+
+.featuresCard {
+  width: 100%;
+  display: flex;
+  padding: 16px; /* Adjusted padding */
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #383A70;
+}
+
+/* Questions Container Styles */
+.QuestionContainer {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.QuestionText {
+  font-size: 20px;
+  text-align: center;
+  font-family: Rubik;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.answer {
+  margin-top: 23px;
+  font-size: 16px;
+  font-family: Overpass;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* FAQ Section Styles */
+.FAQ-Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  max-width: 1400px;
+  padding: 64px 48px;
+}
+
+.FAQ-maintitle {
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-family: Rubik;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.FAQ-subtitle {
+  font-size: 18px;
+  font-family: Overpass;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* Footer Styles */
+.footerContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  padding: 24px 24px; /* Adjusted padding */
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #27284E;
+}
+
+.footer-separator {
+  width: 100%;
+  height: 0px;
+  margin: 24px 0; /* Adjusted margin */
+  border: 1px solid #D9D9D9;
+}
+
+.footer-text {
+  font-size: 14px; /* Adjusted font size */
+  font-family: Overpass;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.loginBTN,
+.learnMore-BTN {
+  color: #FFF;
+  transition: background-color 0.3s;
+  font-family: Poppins;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.loginBTN {
+  padding: 12px 34px;
+}
+
+.learnMore-BTN {
+  padding: 12px 34px;
+  margin-top: 30px;
+}
+
+.loginBTN:hover,
+.learnMore-BTN:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+/* For smaller screens */
+@media only screen and (max-width: 767px) {
+  .logo,
+  .bannerContainer,
+  .main-title-container,
+  .main-title-content,
+  .featuresContent,
+  .features-grid,
+  .QuestionContainer,
+  .FAQ-Container {
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+
+  /* Adjustments for smaller screens */
+  .logo {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .bannerContainer {
+    padding: 96px 20px; /* Adjusted padding */
+  }
+
+  .main-title-container {
+    margin-top: 64px; /* Adjusted margin */
+  }
+
+  .main-title-content {
+    padding: 64px 24px; /* Adjusted padding */
+  }
+
+  .featuresContent {
+    gap: 32px; /* Adjusted gap */
+    padding: 48px 24px; /* Adjusted padding */
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .QuestionContainer {
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+
+  .FAQ-Container {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+}
+
+/* For medium screens */
+@media only screen and (min-width: 768px) {
+  .bannerContainer,
+  .main-title-container,
+  .main-title-content,
+  .featuresContent,
+  .features-grid,
+  .QuestionContainer,
+  .FAQ-Container {
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+
+  /* Adjustments for medium screens */
+  .bannerContainer {
+    padding: 96px 80px; /* Adjusted padding */
+  }
+
+  .main-title-container {
+    margin-top: 96px; /* Adjusted margin */
+  }
+
+  .main-title-content {
+    padding: 96px 48px; /* Adjusted padding */
+  }
+
+  .featuresContent {
+    gap: 48px; /* Adjusted gap */
+    max-width: 1400px;
+    padding: 64px 48px; /* Adjusted padding */
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr 1fr; /* Two column layout */
+  }
+
+  .QuestionContainer {
+    margin-bottom: 30px; /* Adjusted margin */
+  }
+
+  .FAQ-Container {
+    grid-template-columns: 1fr 1fr; /* Two column layout */
+  }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1024px) {
+  .bannerContainer,
+  .main-title-content,
+  .featuresContent,
+  .footerContainer {
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+
+  /* Adjustments for large screens */
+  .bannerContainer {
+    padding: 96px 120px; /* Adjusted padding */
+  }
+
+  .main-title-content {
+    padding: 96px 64px; /* Adjusted padding */
+  }
+
+  .featuresContent {
+    padding: 64px 64px; /* Adjusted padding */
+  }
+
+  .footerContainer {
+    padding: 32px 120px; /* Adjusted padding */
+  }
+}
